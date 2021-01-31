@@ -110,7 +110,7 @@ void APIENTRY hkEndScene(LPDIRECT3DDEVICE9 o_pDevice)
 						calcs->WorldToScreen(currPlayer->getOrigin(), entPosBase2D);
 
 						float distance = calcs->getDistance(hack->localPlayer->getOrigin(), currPlayer->getOrigin());    //CALCULATE THE COLOR THAT WE WANT THEM TO APPEAR, TO SIGNIFY DISTANCE
-						//150, 1500
+					
 						D3DCOLOR color;
 						int min = 200;
 						int max = 2248;
@@ -519,7 +519,7 @@ DWORD WINAPI HackThread()
 
 	fonts.logo = new CD3DFont("Verdana", 14, D3DFONT_BOLD);
 	fonts.hackList = new CD3DFont("Verdana", 11, 0);
-	fonts.esp = new CD3DFont("Verdana", 8, 0);
+	fonts.esp = new CD3DFont("Verdana", 8, 0); 
 	
 	UIxPos = windowWidth - 400;
 	UIyPos = windowHeight - 300;

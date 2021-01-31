@@ -1,20 +1,20 @@
 ﻿  main.cpp
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(76,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(76,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(77,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(77,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(175,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(175,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(175,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(175,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(183,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(184,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(201,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(201,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\main.cpp(104,15): warning C4101: 'entPosHeadTop2D': unreferenced local variable
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(76,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(76,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(77,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(77,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(175,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(175,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(175,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(175,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(183,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(184,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(201,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(201,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Dev\Github\Dorchiware\Dorchiware\Dorchiware\main.cpp(104,15): warning C4101: 'entPosHeadTop2D': unreferenced local variable
   Generating code
-  10 of 199 functions ( 5.0%) were compiled, the rest were copied from previous compilation.
-    5 functions were new in current compilation
-    9 functions had inline decision re-evaluated but remain unchanged
+  2 of 199 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  Dorchiware.vcxproj -> D:\Dev\VisualStudio\Dorchiware\Release\Dorchiware.dll
+  Dorchiware.vcxproj -> D:\Dev\Github\Dorchiware\Dorchiware\Release\Dorchiware.dll

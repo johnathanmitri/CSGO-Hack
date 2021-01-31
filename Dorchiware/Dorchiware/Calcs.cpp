@@ -40,7 +40,7 @@ float Calcs::getDistance(Vector3 localPlayer, Vector3 target)
     float zDisp = localPlayer.y - target.y;
     float lateralHypotenuse = sqrt(xDisp * xDisp + zDisp * zDisp);
 
-    return sqrt(lateralHypotenuse * lateralHypotenuse + yDisp * yDisp);
+    return sqrt(lateralHypotenuse * lateralHypotenuse + yDisp * yDisp);  //now take vertical distance into account
 }
 
 bool Calcs::WorldToScreen(Vector3 pos, Vector2& screen)

@@ -6,6 +6,7 @@
 #include "cHack.h"
 #include "Calcs.h"
 #include "cKeybinds.h"
+#include "cHook.h"
 
 
 #include <ctime>
@@ -61,9 +62,10 @@ playerEnt* stackingPlayer = nullptr;
 
 extern LPDIRECT3DDEVICE9 pDevice = 0;
 
+cHook* endSceneHook;
 
 void* d3d9Device[119];
-BYTE EndSceneBytes[7]{ 0 };
+//BYTE EndSceneBytes[7]{ 0 };
 tEndScene oEndScene = nullptr;
 
 
@@ -497,9 +499,14 @@ DWORD WINAPI HackThread()
 	hack->clientModuleBase = (uintptr_t)GetModuleHandle("client.dll");
 
 	if (GetD3D9Device(d3d9Device, sizeof(d3d9Device))) {
-		memcpy(EndSceneBytes, (char*)d3d9Device[42], 7);
+		//memcpy(EndSceneBytes, (char*)d3d9Device[42], 7);
+		endSceneHook = new cHook((char*)d3d9Device[42], (char*)hkEndScene, 7);
 
-		oEndScene = (tEndScene)TrampHook((char*)d3d9Device[42], (char*)hkEndScene, 7);
+		oEndScene = (tEndScene)endSceneHook->jumpBackGateway;
+
+		endSceneHook->applyHook();
+
+		//oEndScene = (tEndScene)TrampHook((char*)d3d9Device[42], (char*)hkEndScene, 7);
 	}
 
 
@@ -555,7 +562,10 @@ DWORD WINAPI HackThread()
 
 	//while (hookWorking) {}    //this just waits until the hook isn't running so that we can patch it without breaking anything
 
-	Patch((BYTE*)d3d9Device[42], EndSceneBytes, 7);   //unhook EndScene()
+	//Patch((BYTE*)d3d9Device[42], EndSceneBytes, 7);   //unhook EndScene()
+
+	
+	cHook::unHookAll();
 
 	if (testConsole)
 	{

@@ -160,6 +160,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Calcs.h" />
+    <ClInclude Include="cHook.h" />
     <ClInclude Include="cKeybinds.h" />
     <ClInclude Include="csgo.hpp" />
     <ClInclude Include="D3DFont.h" />
@@ -175,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calcs.cpp" />
+    <ClCompile Include="cHook.cpp" />
     <ClCompile Include="cKeybinds.cpp" />
     <ClCompile Include="D3DFont.cpp" />
     <ClCompile Include="dllmain.cpp" />

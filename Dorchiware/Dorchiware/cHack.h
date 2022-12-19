@@ -6,24 +6,18 @@ public:
 
     struct SettingsType
     {
-        // bool windowedMode = true;
-
         bool aimbot = false;
         bool triggerbot = false;
         float halfTriggerbotFov = 10;
         bool tracers = true;
         bool teamChecking = true;
         bool noRecoil = false;
-        //bool autoSnapping = true;
         bool noViewPunch = false;
         bool stacking = false;
         bool esp = false;
         bool testFlag = false;
         bool hookReady = false;
         bool spinbot = false;
-
-        //int UIxPos = 0;
-        //int UIyPos = 0;
     }settings;
 
 	uintptr_t clientModuleBase;
@@ -46,7 +40,6 @@ public:
 
 	static playerEnt* getPlayerEntity(int index);
 
-	//void __stdcall test();
 };
 
 extern cHack* hack;

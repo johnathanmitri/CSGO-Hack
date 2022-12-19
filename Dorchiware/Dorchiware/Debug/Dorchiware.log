@@ -1,36 +1,36 @@
 ﻿  drawing.cpp
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(34,28): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(34,24): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(35,28): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(35,24): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(36,18): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(43,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(43,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(43,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(43,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(49,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,30): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,30): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,35): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,35): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,68): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,68): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,71): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,71): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,99): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,99): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,110): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,110): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,145): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,145): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,154): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(214,154): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(314,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(314,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(314,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(314,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(317,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(317,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(317,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\Dev\VisualStudio\Dorchiware\Dorchiware\drawing.cpp(317,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Dorchiware.vcxproj -> D:\Dev\VisualStudio\Dorchiware\Debug\Dorchiware.dll
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(23,28): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(23,24): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(24,28): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(24,24): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(25,18): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(31,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(31,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(31,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(31,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(37,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,30): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,30): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,35): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,35): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,68): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,68): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,71): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,71): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,99): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,99): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,110): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,110): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,145): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,145): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,154): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(188,154): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(202,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(202,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(202,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(202,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(205,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(205,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(205,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Dorchiware\drawing.cpp(205,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Dorchiware.vcxproj -> \\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Source Code\Debug\Dorchiware.dll

@@ -2,28 +2,26 @@
 #include "pch.h"
 #include "main.h"
 
-bool console = false;
+#define CONSOLE false
 
 DWORD WINAPI setupHackThread(HMODULE hModule)
 {
-    FILE* f = 0;
-    if (console)
-    {
 
-        AllocConsole();
-        freopen_s(&f, "CONOUT$", "w", stdout);
-        std::cout << "Injected\n\n";
-    }
+#if CONSOLE
+    FILE* f = 0;
+    AllocConsole();
+    freopen_s(&f, "CONOUT$", "w", stdout);
+    std::cout << "Injected\n\n";
+#endif
 
     HackThread();
 
     MessageBeep(MB_ICONWARNING);
 
-    if (console)
-    {
-        fclose(f);
-        FreeConsole();
-    }
+#if CONSOLE
+    fclose(f);
+    FreeConsole();
+#endif
     FreeLibraryAndExitThread(hModule, 0);
     return 0;
 }

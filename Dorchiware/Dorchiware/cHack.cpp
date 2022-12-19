@@ -111,8 +111,7 @@ void cHack::update()
 
     if (hack->settings.triggerbot && GetAsyncKeyState(VK_LBUTTON))
     {
-        //float lowestDistance = 999999;
-        //int lowestDistIndex = 0;
+
         Vector2AIM closestPlayerAngle;
         float lowestDistance = 100;
         for (int tempIndex = 1; tempIndex < 65; tempIndex++)

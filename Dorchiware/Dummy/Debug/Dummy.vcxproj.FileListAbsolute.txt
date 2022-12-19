@@ -1,2 +1,0 @@
-D:\Dev\VisualStudio\d3d9 esp1z1 esp video 2 - snaplines\Dummy\Debug\Dummy.dll
-D:\Dev\VisualStudio\d3d9 esp1z1 esp video 2 - snaplines\Dummy\Debug\Dummy.pdb

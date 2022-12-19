@@ -3,11 +3,6 @@
 #include "cHack.h"
 #include "MiscFunctions.h"
 
-//extern cHack 
-//extern cHack* hack;
-
-//extern cKeybinds* keybinds;
-
 
 void cKeybinds::loadDefaults()
 {

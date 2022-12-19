@@ -21,7 +21,8 @@ BOOL CALLBACK enumWind(HWND handle, LPARAM lp) {
 }
 
 // get process window
-HWND GetProcessWindow() {
+HWND GetProcessWindow() 
+{
 	window = NULL;
 
 	EnumWindows(enumWind, NULL);
@@ -44,7 +45,8 @@ HWND GetProcessWindow() {
 }
 
 // get get vTable 
-bool GetD3D9Device(void** pTable, size_t size) {
+bool GetD3D9Device(void** pTable, size_t size) 
+{
 	if (!pTable)
 		return false;
 

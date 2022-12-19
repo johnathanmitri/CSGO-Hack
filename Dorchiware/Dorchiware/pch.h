@@ -165,7 +165,7 @@ public:
 	class clientInfo* blink; //0x0008
 	class clientInfo* flink; //0x000C
 }; //Size: 0x0010
-static_assert(sizeof(clientInfo) == 0x10, "Client Info Broke");
+static_assert(sizeof(clientInfo) == 0x10, "Client Info Broke");   //project must be set to x86. csgo is not a 64bit game.
 
 
 class entList

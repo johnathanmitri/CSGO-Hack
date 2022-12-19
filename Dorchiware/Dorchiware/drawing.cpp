@@ -5,9 +5,6 @@ ID3DXFont* FontF;
 
 #define w2s calcs->WorldToScreen
 
-//#include "hack.h"
-// filled rectangle
-
 struct SD3DVertex
 {
 	float x, y, z, rhw;
@@ -19,23 +16,14 @@ void DrawFilledRect(int x, int y, int w, int h, D3DCOLOR color) {
 	pDevice->Clear(1, &rect, D3DCLEAR_TARGET, color, 0, 0);
 }
 
-/*void DrawFilledRect2()
-{
-	pDevice->DrawPrimitive(D)
-
-}*/
 
 void DrawLine(int x1, int y1, int x2, int y2, int thickness, D3DCOLOR color, ID3DXLine* LineL) 
 {
-	//ID3DXLine* shit;
-	//D3DXCreateLine(pDevice, &shit);
-
 	D3DXVECTOR2 Line[2];
 	Line[0] = D3DXVECTOR2(x1, y1);
 	Line[1] = D3DXVECTOR2(x2, y2);
 	LineL->SetWidth(thickness);
 	LineL->Draw(Line, 2, color);
-	//shit->Release();
 }
 
 void DrawLine(Vector2 first, Vector2 second, int thickness, D3DCOLOR color, ID3DXLine* LineL)
@@ -70,8 +58,6 @@ Vector3 rotateCWAboutPoint(Vector3 origin, Vector3 toRotate, float radians)
 
 	newPointOffsetFromOrigin.z = 0;
 
-	//y' = y*cos(a) - x*sin(a);
-	//x' = y*sin(a) + x*cos(a);
 	newPointOffsetFromOrigin.y = pointOffsetFromOrigin.y * cos(radians) - pointOffsetFromOrigin.x * sin(radians);
 	newPointOffsetFromOrigin.x = pointOffsetFromOrigin.y * sin(radians) + pointOffsetFromOrigin.x * cos(radians);
 
@@ -85,11 +71,7 @@ void DrawEspBox3D(playerEnt* player, int thickness, D3DCOLOR color, ID3DXLine* L
 	top.z += 7;
 
 	Vector3 bot = player->getOrigin();
-	//Vector3 mid = bot;
-	//mid.z += 50;
-
 	
-	//Vector2AIM aimAngle = player->getViewAngles();
 	float aimAngle = player->getViewAngles().x;   //aim angle in radians
 
 	float angleOfRotationCWRads = toRad((-90) - aimAngle); 
@@ -132,7 +114,7 @@ void DrawEspBox3D(playerEnt* player, int thickness, D3DCOLOR color, ID3DXLine* L
 
 	//bottom ones now
 	bfl.x = bot.x - 15;
-	bfl.y = bot.y + 10;
+	bfl.y = bot.y + 15;
 	bfl.z = bot.z;
 
 	bfr.x = bot.x + 15;
@@ -201,109 +183,15 @@ void DrawEspBox3D(playerEnt* player, int thickness, D3DCOLOR color, ID3DXLine* L
 }
 
 
-/*
-void DrawLine(int x1, int y1, int x2, int y2, int thickness, D3DCOLOR color)
-{
-	D3DPRIMITIVETYPE type = D3DPT_POINTLIST;
-	
-
-}*/
-
 void DrawFilledBox(int x, int y, int width, int height, D3DCOLOR color)
 {
 	SD3DVertex pVertex[4] = { { x, y + height, 0.0f, 1.0f, color }, { x, y, 0.0f, 1.0f, color }, { x + width, y + height, 0.0f, 1.0f, color }, { x + width, y, 0.0f, 1.0f, color } };
 	pDevice->SetFVF(D3DFVF_XYZRHW | D3DFVF_DIFFUSE);
 	pDevice->DrawPrimitiveUP(D3DPT_TRIANGLESTRIP, 2, pVertex, sizeof(SD3DVertex));
-	
 }
 
 
 
-/*void DrawLine(int x, int y, int x2, int y2, int unusedThickness, D3DCOLOR color) {
-	SD3DVertex pVertex[2] = { { x, y, 0.0f, 1.0f, color }, { x2, y2, 0.0f, 1.0f, color } };
-	pDevice->SetFVF(D3DFVF_XYZRHW | D3DFVF_DIFFUSE);
-	pDevice->DrawPrimitiveUP(D3DPT_LINELIST, 1, &pVertex, sizeof(SD3DVertex));
-}*/
-
-/*void DrawLine(Vector2 src, Vector2 dst, int thickness, D3DCOLOR color)
-{
-	DrawLine(src.x, src.y, dst.x, dst.y, thickness, color);
-}*/
-/*
-void DrawEspBox2D(Vector2 top, Vector2 bot, int thickness, D3DCOLOR color) {
-	int height = abs(top.y - bot.y);
-	Vector2 tl, tr;
-	tl.x = top.x - height / 4;
-	tr.x = top.x + height / 4;
-	tl.y = tr.y = top.y;
-
-	Vector2 bl, br;
-	bl.x = bot.x - height / 4;
-	br.x = bot.x + height / 4;
-	bl.y = br.y = bot.y;
-
-	DrawLineFAST(tl, tr, thickness, color);
-	DrawLineFAST(bl, br, thickness, color);
-	DrawLineFAST(tl, bl, thickness, color);
-	DrawLineFAST(tr, br, thickness, color);
-}
-
-void DrawEspBox3D(Vector3 top, Vector3 bot, float a, int width, int thickness, D3DCOLOR color) 
-{
-	int height3D = abs(top.z - bot.z);
-	Vector3 b1, b2, b3, b4, t1, t2, t3, t4;
-	b1.z = b2.z = b3.z = b4.z = bot.z;
-
-	b1.x = bot.x + (cos(toRad(a + 45)) * width);
-	b1.y = bot.y + (sin(toRad(a + 45)) * width);
-
-	b2.x = bot.x + (cos(toRad(a + 135)) * width);
-	b2.y = bot.y + (sin(toRad(a + 135)) * width);
-
-	b3.x = bot.x + (cos(toRad(a + 225)) * width);
-	b3.y = bot.y + (sin(toRad(a + 225)) * width);
-
-	b4.x = bot.x + (cos(toRad(a + 315)) * width);
-	b4.y = bot.y + (sin(toRad(a + 315)) * width);
-
-	t1.x = b1.x;
-	t1.y = b1.y;
-	t1.z = b1.z + height3D;
-
-	t2.x = b2.x;
-	t2.y = b2.y;
-	t2.z = b2.z + height3D;
-
-	t3.x = b3.x;
-	t3.y = b3.y;
-	t3.z = b3.z + height3D;
-
-	t4.x = b4.x;
-	t4.y = b4.y;
-	t4.z = b4.z + height3D;
-
-	Vector2 b1_2, b2_2, b3_2, b4_2, t1_2, t2_2, t3_2, t4_2;
-	if (w2s(b1, b1_2) && w2s(b2, b2_2) && w2s(b3, b3_2) && w2s(b4, b4_2) && w2s(t1, t1_2) && w2s(t2, t2_2) && w2s(t3, t3_2) && w2s(t4, t4_2)) {
-
-		// col
-		DrawLine(t1_2, b1_2, thickness, color);
-		DrawLine(t2_2, b2_2, thickness, color);
-		DrawLine(t3_2, b3_2, thickness, color);
-		DrawLine(t4_2, b4_2, thickness, color);
-
-		// top base
-		DrawLine(t1_2, t2_2, thickness, color);
-		DrawLine(t2_2, t3_2, thickness, color);
-		DrawLine(t3_2, t4_2, thickness, color);
-		DrawLine(t4_2, t1_2, thickness, color);
-
-		// bottom base
-		DrawLine(b1_2, b2_2, thickness, color);
-		DrawLine(b2_2, b3_2, thickness, color);
-		DrawLine(b3_2, b4_2, thickness, color);
-		DrawLine(b4_2, b1_2, thickness, color);
-	}
-}*/
 
 void LDrawText(const char* text, float x, float y, int justification, D3DCOLOR color, ID3DXFont* font) {
 	RECT rect;
@@ -322,15 +210,7 @@ void LDrawText(const char* text, float x, float y, int justification, D3DCOLOR c
 
 void fastDrawText(const char* text, float x, float y, int justification, D3DCOLOR color, CD3DFont* font)
 {
-	//CD3DFont* aa = new CD3DFont("Arial", 14, 0);
-
-	//aa->InitDeviceObjects(pDevice);
-	
-
 	font->DrawTextA(x, y, color, text, 0);
-
-	//aa->~CD3DFont();
-
 }
 
 void slowDrawText(const char* text, float x, float y, int justification, D3DCOLOR color, const char* fontName, int fontSize)

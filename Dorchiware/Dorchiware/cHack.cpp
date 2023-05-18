@@ -149,7 +149,44 @@ void cHack::update()
 
     if (GetAsyncKeyState(VK_KEY_C)) //key c being Held Down
     {
-        //std::cout << "Vert Velocity: " << localPlayer->getVelocity().z << std::endl;
+        if (abs(hack->localPlayer->getVelocity().z) < 7)
+        {
+            Vector2AIM closestPlayerAngle;
+            float lowestDistance = 100;
+            for (int tempIndex = 1; tempIndex < 65; tempIndex++)
+            {
+                playerEnt* tempPlayerEntity = getPlayerEntity(tempIndex);
+                if (tempPlayerEntity != 0)
+                {
+                    Vector2AIM angle = calcs->calcAngle(hack->localPlayer->getViewPosition(), tempPlayerEntity->getBonePosition(8));
+                    if (isnan(angle.x) || isnan(angle.y))
+                    {
+                        continue;
+                    }
+                    angle = angle - hack->localPlayer->getAimPunchAngle() * 2;
+                    float distFromCrosshair = sqrt(square(angle.x - hack->aimAngles->x) + square(angle.y - hack->aimAngles->y)); //{ abs(angle.x - hack->aimAngles->x), abs(angle.y - hack->aimAngles->y)};
+                    if (distFromCrosshair < hack->settings.halfTriggerbotFov) //if hes within the fov
+                    {
+                        if (distFromCrosshair < lowestDistance)
+                        {
+                            lowestDistance = distFromCrosshair;
+                            closestPlayerAngle = angle;
+                        }
+
+                    }
+                }
+            }
+            if (lowestDistance != 100)   //after looping, if the lowest value has changed, then we found someone
+            {
+                closestPlayerAngle.Normalize();
+                *hack->aimAngles = closestPlayerAngle;
+                *(int*)(hack->clientModuleBase + hazedumper::signatures::dwForceAttack) = 5;
+                Sleep(20);
+                *(int*)(hack->clientModuleBase + hazedumper::signatures::dwForceAttack) = 4;
+            }
+        }
+
+        /*//std::cout << "Vert Velocity: " << localPlayer->getVelocity().z << std::endl;
         if (abs(hack->localPlayer->getVelocity().z) < 7)
         {
             float lowestDistance = 999999;
@@ -180,8 +217,9 @@ void cHack::update()
             Sleep(20);
             *(int*)(hack->clientModuleBase + hazedumper::signatures::dwForceAttack) = 4;
         }
+        */
     }
-
+    
 breakIf:
     Sleep(1);
 }

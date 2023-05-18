@@ -1,22 +1,71 @@
-﻿  main.cpp
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(64,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(64,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(65,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(65,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(162,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(162,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(162,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(162,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(170,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(171,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(181,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(181,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(185,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(185,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-\\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Dorchiware\main.cpp(92,15): warning C4101: 'entPosHeadTop2D': unreferenced local variable
+﻿  pch.cpp
+  Calcs.cpp
+  cHook.cpp
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\cHook.cpp(19,23): warning C4309: '=': truncation of constant value
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\cHook.cpp(37,37): warning C4309: '=': truncation of constant value
+  cKeybinds.cpp
+  D3DFont.cpp
+  dllmain.cpp
+  drawing.cpp
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(23,28): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(23,24): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(24,28): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(24,24): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(25,18): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(31,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(31,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(31,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(31,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(37,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,30): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,30): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,35): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,35): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,68): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,68): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,71): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,71): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,99): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,99): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,110): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,110): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,145): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,145): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,154): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(188,154): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(202,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(202,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(202,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(202,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(205,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(205,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(205,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\drawing.cpp(205,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  dx.cpp
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\dx.cpp(41,32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\dx.cpp(42,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  cHack.cpp
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\cHack.cpp(56,37): warning C4305: '+=': truncation from 'double' to 'float'
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\cHack.cpp(67,37): warning C4305: '-=': truncation from 'double' to 'float'
+  MiscFunctions.cpp
+  main.cpp
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(64,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(64,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(65,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(65,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(162,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(162,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(162,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(162,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(170,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(171,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(181,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(181,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(185,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(185,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\main.cpp(92,15): warning C4101: 'entPosHeadTop2D': unreferenced local variable
   Generating code
-  2 of 201 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 193 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  Dorchiware.vcxproj -> \\SERVER-COMPUTER\hdd2\Johnathan\CodeProof\Dorchiware\Release\Dorchiware.dll
+  Dorchiware.vcxproj -> D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Release\Dorchiware.dll

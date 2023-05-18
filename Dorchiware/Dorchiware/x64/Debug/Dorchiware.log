@@ -1,0 +1,2 @@
+﻿  pch.cpp
+D:\Johnathan\Documents\GitHub\Dorchiware\Dorchiware\Dorchiware\pch.h(168,34): error C2338: static_assert failed: 'Client Info Broke'

@@ -1,5 +1,3 @@
-# Dorchiware
-
 This is my CSGO cheat client. I didn't make this with malicious intent, and never distributed it.
 
 There’s hundreds of cheat softwares available on the internet, that have far more features, and are available for anybody to download, but I wanted to make my own.
